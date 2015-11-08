@@ -13,11 +13,13 @@ public class Application extends Controller {
 
     public Result login() {
         return ok(
-            login.render(form(Login.class))
+
+            login.render()
         );
     }
 
-public class Login {
+
+public static class Login {
 
     public String email;
     public String password;
