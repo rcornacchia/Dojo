@@ -7,9 +7,9 @@ import views.html.*;
 
 public class Application extends Controller {
 
-    public Result index() {
-        return ok(index.render("Zentasks will be here   ."));
-    }
+     public Result index() {
+         return ok(index.render());
+     }
 
     public Result login() {
         return ok(
@@ -17,11 +17,12 @@ public class Application extends Controller {
             login.render()
         );
     }
-}
+
 
 public class Login {
 
     public String email;
     public String password;
 
+}
 }
