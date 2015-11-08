@@ -1,0 +1,8 @@
+username: dojo
+password: dojomaster
+
+instance identifier: dojo
+
+db_name: ase
+
+db_port: 3306
