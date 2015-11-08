@@ -13,11 +13,13 @@ public class Application extends Controller {
 
     public Result login() {
         return ok(
-
-            login.render()
+            login.render(form(Login.class))
         );
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 448f74b6d985b5c6f0a326d21b135059a7ae3950
 
 public class Login {
 
@@ -25,4 +27,8 @@ public class Login {
     public String password;
 
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 448f74b6d985b5c6f0a326d21b135059a7ae3950
