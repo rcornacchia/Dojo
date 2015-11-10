@@ -53,55 +53,378 @@
           <h2>3-2-1 grid example<p class="lead">3 columns on desktop, 2 columns on tablets, 1 columns on phones</p></h2>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-xs-12">
-                    <a href="#">
+                    <!--<a href="#">
                     <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-                </a>
-                </div>
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
         <div class="col-lg-4 col-sm-6 col-xs-12">
-            <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
     </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
+     <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/774413_1882357301759_1077604114_o.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
     </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
+    <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <!--<a href="#">
+                    <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+                </a>-->
+                  <!-- image trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal">
+                          <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="gridImage">
+                        </a>
+                        <style type="text/css">
+                        
+                        </style>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Artwork Title</h4>
+                              </div>
+                              <div class="row">
+                                <div class="modal-body">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <img src="https://s3.amazonaws.com/dojoart/art/pic4.jpg" class="thubmnail img-responsive">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        User: abarkume
+                                        <br>
+                                        Votes: <p id="numVotes">1337</p>
+                                        <br>
+                                        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-silver-icons-arrows/008142-glossy-silver-icon-arrows-cut-arrow-up.png" id="upvoteButton" onclick="upvoteButtonClicked()" height="42" width="42">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
     </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
-    </div>
-     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
-        </a>
-    </div>
-  </div>
 
           <div class="mastfoot">
             <div class="inner">
               <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a></p>
+
             </div>
           </div>
 
@@ -115,7 +438,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/Users/joshfram/Documents/Columbia/Senior/ASE/Dojo/firstapp/public/javascripts/bootstrap.min.js"></script>
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/index.js")" type="text/javascript"></script>
   </body>
 </html>
 

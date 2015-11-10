@@ -19,6 +19,9 @@ a:hover {
   border: 1px solid #fff;
 }
 
+.thumbnail {
+margin-bottom:7px;
+}
 
 /*
  * Base structure
@@ -127,6 +130,13 @@ body {
   color: rgba(255,255,255,.5);
 }
 
+.gridImage{
+    max-width: 150px;
+    max-height: 150px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*
  * Affix and center
