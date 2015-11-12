@@ -6,12 +6,17 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.11.6"
 
+libraryDependencies += jdbc
+
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
   javaWs
 
 )
+
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.34"
+
 
 val appDependencies = Seq(
   "mysql" % "mysql-connector-java" % "5.1.21"
