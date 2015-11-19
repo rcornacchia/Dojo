@@ -11,6 +11,8 @@ libraryDependencies ++= Seq(
   cache,
   javaWs,
   "mysql" % "mysql-connector-java" % "5.1.18"
+  "com.amazonaws" % "aws-java-sdk" % "1.3.11"
+
 )
 
 val appDependencies = Seq(

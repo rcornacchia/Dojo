@@ -13,6 +13,11 @@ POST    /login                      controllers.Application.authenticate()
 GET     /register                   controllers.Application.register()
 POST    /register                   controllers.Application.addUser()
 
+
+# upload
+GET     /upload                     controllers.Application.uploadPage()
+POST    /upload                     controllers.Application.upload()
+
 # Secure Index after login
 GET     /secureIndex                controllers.Application.secureIndex(String)
 POST    /secureIndex                controllers.Application.click(String)

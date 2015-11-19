@@ -9,6 +9,7 @@ import views.html.*;
 import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.util.Date;
+import java.io.File;
 
 
 public class Application extends Controller {
@@ -27,17 +28,35 @@ public class Application extends Controller {
                 try{
                     Date result = df.parse(auctionEndDate);
                     Date today = new Date();
-                    if(arts.get(i).auction.ended==0 && today.after(result)){ 
+                    if(arts.get(i).auction.ended==0 && today.after(result)){
                         arts.get(i).auction.ended=1;
                         arts.get(i).auction.save();
                     }
                 }
                 catch(Exception e) {
-                    e.printStackTrace(); 
+                    e.printStackTrace();
                 }
             }
             return ok(secureIndex.render(arts.get(0),arts.get(1),arts.get(2),arts.get(3),arts.get(4),arts.get(5),arts.get(6),arts.get(7),arts.get(8),Form.form(Index.class), Users.findByEmail(email)));
    }
+
+
+
+   public Result uploadPage() {
+        return ok(
+            upload.render(Form.form(Upload.class))
+        );
+    }
+
+    public static class Upload {
+        public File picture;
+    }
+
+    public Result upload() {
+        Form<Upload> uploadForm = Form.form(Upload.class).bindFromRequest();
+        File file = uploadForm.get().picture;
+        return ok("File uploaded");
+    }
 
     public Result login() {
         return ok(
@@ -110,8 +129,8 @@ public class Application extends Controller {
                 routes.Application.secureIndex(user.email)
         );
     }
-        
-    public Result submitBid(Artworks art, Users user, Form<Index> indexForm){  
+
+    public Result submitBid(Artworks art, Users user, Form<Index> indexForm){
         Long bid = indexForm.get().bid;
         if (art.auction.currentBid<bid){
             art.auction.currentBid=bid;
@@ -145,7 +164,7 @@ public class Application extends Controller {
         }
 
     }
-    
+
 
     public Result authenticate() {
         Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
